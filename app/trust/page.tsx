@@ -1,3 +1,10 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Trust & Compliance — Kavera',
+  description: 'Data governance, security posture, and procurement information for Kavera. Federated by design, GDPR Article 9, 10-year audit trail. SOC 2 and ISO 27001 in progress.',
+}
+
 export default function Trust() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-16">

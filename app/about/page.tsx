@@ -1,3 +1,10 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About — Kavera',
+  description: 'Kavera is an AI-native real-world data company. Three named human roles, eleven AI agents, built on federated architecture. Named accountability at every regulated gate.',
+}
+
 export default function About() {
   const agents = [
     { name: "Iris", role: "Cohort Concierge / AI Explorer", autonomy: "Full" },

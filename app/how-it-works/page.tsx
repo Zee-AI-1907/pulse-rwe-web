@@ -1,3 +1,10 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'How it works — Kavera Federated RWD Platform',
+  description: 'How Kavera delivers pharma RWE without moving data. Federated TRE architecture: ICU source data stays inside the hospital perimeter. OMOP CDM, Sentinel airlock, 10-year audit trail.',
+}
+
 export default function HowItWorks() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-16">
