@@ -108,6 +108,41 @@ export default function Home() {
         </div>
       </section>
 
+      {/* How we price */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl font-semibold text-slate-900 mb-3">How we price</h2>
+          <p className="text-slate-500 mb-10">Indicative ranges. Final pricing scoped during feasibility.</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="bg-slate-50 border border-slate-200 rounded-lg p-6">
+              <span className="text-emerald-500 text-xs font-bold tracking-widest uppercase">ANNUAL · BRONZE / SILVER / GOLD</span>
+              <h3 className="text-slate-900 font-semibold mt-2 mb-2">Discovery subscription</h3>
+              <p className="text-2xl font-bold text-slate-900 mt-2 mb-2">$40K – $1M+ per year</p>
+              <p className="text-slate-500 text-sm leading-relaxed">Unlimited feasibility queries, cohort sizing, and self-serve discovery. Tier scales with named users, study volume, and access to the Iris AI Explorer.</p>
+              <p className="text-slate-400 text-xs mt-2">For: Pharma RWE teams running multiple studies per year.</p>
+            </div>
+
+            <div className="bg-slate-50 border border-slate-200 rounded-lg p-6">
+              <span className="text-emerald-500 text-xs font-bold tracking-widest uppercase">USAGE · ONE-TIME</span>
+              <h3 className="text-slate-900 font-semibold mt-2 mb-2">Per-study packages</h3>
+              <p className="text-2xl font-bold text-slate-900 mt-2 mb-2">$25K – $300K per study</p>
+              <p className="text-slate-500 text-sm leading-relaxed">Federated analysis on a defined cohort, scoped to one therapeutic area or research question. Trusted Research Environment provisioned for the study duration.</p>
+              <p className="text-slate-400 text-xs mt-2">For: Biotech and academic teams running a single study.</p>
+            </div>
+
+            <div className="bg-slate-50 border border-slate-200 rounded-lg p-6">
+              <span className="text-emerald-500 text-xs font-bold tracking-widest uppercase">ADD-ON · NAMED USER</span>
+              <h3 className="text-slate-900 font-semibold mt-2 mb-2">Iris AI Explorer</h3>
+              <p className="text-2xl font-bold text-slate-900 mt-2 mb-2">$3K – $8K per user / month</p>
+              <p className="text-slate-500 text-sm leading-relaxed">Natural-language cohort design, automated feasibility analysis, and study scoping support. Available standalone or as an add-on to any subscription tier.</p>
+              <p className="text-slate-400 text-xs mt-2">For: Power users who run frequent feasibility analyses.</p>
+            </div>
+          </div>
+
+          <p className="text-slate-400 text-sm mt-8">Hospital revenue share, multi-year discounts, and study bundling discussed during scoping. We do not publish list prices because pharma RWE pricing is therapeutic-area and cohort-complexity dependent.</p>
+        </div>
+      </section>
+
       {/* Pricing */}
       <section className="py-20 px-6 bg-slate-900 text-white">
         <div className="max-w-4xl mx-auto">
