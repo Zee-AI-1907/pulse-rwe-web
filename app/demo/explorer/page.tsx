@@ -43,7 +43,7 @@ export default function DemoExplorer() {
       </div>
 
       {/* Messages */}
-      <div className="flex-1 bg-white border border-slate-200 rounded-lg overflow-y-auto p-6 mb-4 space-y-4" style={{ minHeight: "400px" }}>
+      <div className="flex-1 bg-white rounded-lg overflow-y-auto p-6 mb-4 space-y-4" style={{ minHeight: "400px", border: "1px solid rgba(16,185,129,0.4)", boxShadow: "0 0 0 1px rgba(16,185,129,0.15), 0 0 24px rgba(16,185,129,0.12), 0 4px 24px rgba(0,0,0,0.06)" }}>
         {messages.length === 0 && (
           <div className="text-center py-12">
             <p className="text-slate-400 text-sm mb-4">Ask Iris a feasibility question to get started.</p>
