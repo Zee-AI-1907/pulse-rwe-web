@@ -37,7 +37,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="bg-slate-900 border-t border-slate-800 py-8 mt-16">
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-slate-400 text-sm text-center">
-              Demo environment. Production platform forthcoming. No real patient data on this site.
+              <a href="/trust" className="hover:text-slate-200 underline underline-offset-2">Trust</a>
+              {" · "}Demo environment. Production platform forthcoming. No real patient data on this site.
             </p>
             <p className="text-slate-600 text-xs text-center mt-2">
               © 2026 Kavera. All rights reserved.
