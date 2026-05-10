@@ -14,7 +14,7 @@ export default function HowItWorks() {
           {[
             { n: "1", title: "eConnect source", desc: "Device, vitals, and PDMS data from ICU and acute care units. Remains inside the hospital." },
             { n: "2", title: "De-id gateway", desc: "HIPAA Safe Harbor + GDPR pseudonymisation. 18 identifiers removed. k-anonymity ≥5 enforced at query time." },
-            { n: "3", title: "OMOP warehouse", desc: "OMOP CDM v5.4 lakehouse, EU + UAE regions. Columnar, query-optimised." },
+            { n: "3", title: "OMOP warehouse", desc: "OMOP CDM v5.4 lakehouse, multi-region (US + ex-US). Columnar, query-optimised." },
             { n: "4", title: "Cohort builder", desc: "Self-service UI. Define criteria, get counts. Feasibility confirmed before any study commitment." },
           ].map(({ n, title, desc }) => (
             <div key={n} className="flex-1 relative">

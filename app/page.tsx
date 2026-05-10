@@ -63,7 +63,7 @@ export default function Home() {
                   ["Data class", "EHR snapshots", "Continuous device + waveform + PDMS"],
                   ["Temporal resolution", "15-min or daily", "Minute-level"],
                   ["Clinical setting", "Outpatient, ambulatory", "ICU, peri-op, cardiac, neuro"],
-                  ["Geography", "US-centric", "Türkiye + GCC — non-US comparator"],
+                  ["Geography", "US-centric", "US + ex-US markets (EMEA, Middle East)"],
                   ["Architecture", "Dataset licence", "Federated — no data movement"],
                 ].map(([dim, ehr, dc]) => (
                   <tr key={dim} className="bg-white hover:bg-slate-50">
