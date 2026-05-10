@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 export default function Contact() {
-  const [form, setForm] = useState({ name: "", company: "", role: "", email: "", description: "" });
+  const [form, setForm] = useState({ name: "", company: "", role: "", email: "", description: "", therapeuticArea: "" });
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -65,6 +65,18 @@ export default function Contact() {
             className="w-full border border-slate-300 rounded px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent resize-none"
           />
         </div>
+
+        <div>
+          <label className="block text-sm font-medium text-slate-700 mb-1">Therapeutic area or use case (optional)</label>
+          <input
+            type="text"
+            placeholder="e.g. cardiogenic shock outcomes, amiodarone post-marketing, ARDS sub-phenotyping"
+            value={form.therapeuticArea}
+            onChange={e => setForm(f => ({ ...f, therapeuticArea: e.target.value }))}
+            className="w-full border border-slate-300 rounded px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+          />
+        </div>
+        <p className="text-slate-400 text-sm">We respond within one business day. Your enquiry routes to a named human, not an inbox.</p>
         <button
           type="submit"
           disabled={status === "sending"}
