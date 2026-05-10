@@ -91,9 +91,20 @@ export default function DemoExplorer() {
           </div>
         )}
         <div ref={bottomRef} />
+        {/* Conversion CTA */}
+  {messages.length > 0 && (
+    <div className="border-t border-slate-200 pt-6">
+      <h2 className="text-base font-semibold text-slate-900">Want to run this query against the real cohort?</h2>
+      <p className="text-slate-500 text-sm">The synthetic demo shows you the experience. The real cohort runs against 1.2M+ acute care records under our federated architecture. A 20-minute call gives you a feasibility estimate for your actual study question.</p>
+      <div className="flex flex-col sm:flex-row gap-3 mt-4">
+        <a href="[CALENDAR_URL_TBD]" className="bg-emerald-500 hover:bg-emerald-400 text-white px-4 py-2.5 rounded font-medium text-sm text-center">Book a feasibility call →</a>
+        <a href="/contact?context=demo" className="border border-emerald-500 text-emerald-600 hover:bg-emerald-50 px-4 py-2.5 rounded font-medium text-sm text-center">Or send us your question →</a>
       </div>
+    </div>
+  )}
+  </div>
 
-      {/* Input */}
+  {/* Input */}
       <div className="flex gap-3">
         <input
           type="text"

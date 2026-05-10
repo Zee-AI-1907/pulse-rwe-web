@@ -13,8 +13,8 @@ export default function Home() {
           </h1>
           <p className="text-slate-300 text-lg max-w-2xl mb-8">
             Cohort feasibility in hours, not weeks. Complex acute care data from
-            continuous device and waveform streams — the asset class EHR-only vendors
-            structurally cannot replicate.
+            continuous device and waveform streams — the asset class most EHR-based RWE vendors
+            do not capture.
           </p>
           <div className="flex gap-4">
             <Link href="/contact" className="bg-emerald-500 hover:bg-emerald-400 text-white px-6 py-3 rounded font-medium transition-colors">

@@ -3,8 +3,8 @@ import { NextApiRequest, NextApiResponse } from 'next';
 
 const contactHandler = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === 'POST') {
-    const { name, company, role, email, description, therapeuticArea } = req.body;
-    const message = `🔔 New lead: ${name} / ${company} / ${role} / ${email}\nNeed: ${description}${therapeuticArea ? `\nTherapeutic area: ${therapeuticArea}` : ''}`;
+    const { name, company, role, email, description, therapeuticArea, context } = req.body;
+    const message = `🔔 New lead: ${name} / ${company} / ${role} / ${email}\nNeed: ${description}${therapeuticArea ? `\nTherapeutic area: ${therapeuticArea}` : ''}${context ? `\nSource: ${context}` : ''}`;
 
     try {
       const telegramRes = await fetch(`https://api.telegram.org/bot8270911338:AAFHtw_Ukn8TK2u5H0ncY1c106bEd-7O1vU/sendMessage`, {
