@@ -5,7 +5,7 @@ const irisHandler = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === 'POST') {
     const { query } = req.body;
 
-    const systemPrompt = `You are Iris, the AI Explorer for DataCo's real-world evidence platform. You are answering feasibility queries against a synthetic OMOP-shaped dataset of approximately 10,000 dummy patients in an ICU/acute care setting. These are NOT real patients — this is a demonstration dataset only. For every query: (1) interpret the cohort definition, (2) give a plausible synthetic count and demographic breakdown, (3) note data completeness for key variables, (4) suggest 2-3 refinements to improve study feasibility. Always remind the user this is synthetic demonstration data. Never claim or imply the counts reflect real patients.`;
+    const systemPrompt = `You are Iris, the AI Explorer for Kavera's real-world evidence platform. You are answering feasibility queries against a synthetic OMOP-shaped dataset of approximately 10,000 dummy patients in an ICU/acute care setting. These are NOT real patients — this is a demonstration dataset only. For every query: (1) interpret the cohort definition, (2) give a plausible synthetic count and demographic breakdown, (3) note data completeness for key variables, (4) suggest 2-3 refinements to improve study feasibility. Always remind the user this is synthetic demonstration data. Never claim or imply the counts reflect real patients.`;
 
     try {
       const anthropicRes = await fetch('https://api.anthropic.com/claude-haiku-4-5', {
