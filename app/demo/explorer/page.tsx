@@ -101,7 +101,8 @@ export default function DemoExplorer() {
           onChange={e => setQuery(e.target.value)}
           onKeyDown={e => e.key === "Enter" && handleAsk()}
           placeholder="e.g. How many ICU patients with ARDS and prone positioning in 2023?"
-          className="flex-1 border border-slate-300 rounded px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
+          className="flex-1 rounded px-4 py-2.5 text-sm focus:outline-none"
+          style={{ border: "1px solid rgba(16,185,129,0.5)", boxShadow: "0 0 0 1px rgba(16,185,129,0.2), 0 0 16px rgba(16,185,129,0.15)" }}
           disabled={loading}
         />
         <button
